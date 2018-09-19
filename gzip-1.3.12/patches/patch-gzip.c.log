@@ -1,0 +1,17 @@
+Hmm...  Looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|--- gzip.c.orig	Tue Mar 20 01:09:51 2007
+|+++ gzip.c	Tue Jun  5 21:43:50 2007
+--------------------------
+Patching file gzip.c using Plan A...
+Hunk #1 succeeded at 216.
+Hunk #2 succeeded at 246 (offset 1 line).
+Hunk #3 succeeded at 324 (offset 2 lines).
+Hunk #4 succeeded at 430 (offset 3 lines).
+Hunk #5 succeeded at 453 (offset 3 lines).
+Hunk #6 succeeded at 841 (offset 10 lines).
+Hunk #7 succeeded at 849 (offset 10 lines).
+Not setting time of file gzip.c (time mismatch)
+Hmm...  Ignoring the trailing garbage.
+done

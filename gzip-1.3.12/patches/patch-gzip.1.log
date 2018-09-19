@@ -1,0 +1,12 @@
+Hmm...  Looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|--- gzip.1.orig	Fri Dec  8 14:45:37 2006
+|+++ gzip.1	Tue Jun  5 21:44:20 2007
+--------------------------
+Patching file gzip.1 using Plan A...
+Hunk #1 succeeded at 4.
+Hunk #2 succeeded at 12.
+Hunk #3 succeeded at 223.
+Not setting time of file gzip.1 (time mismatch)
+done

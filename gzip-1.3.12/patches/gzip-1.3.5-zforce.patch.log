@@ -1,0 +1,11 @@
+Hmm...  Looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|--- gzip-1.2.4/zforce.in.sopwith	Thu Feb  3 18:06:30 2000
+|+++ gzip-1.2.4/zforce.in	Thu Feb  3 18:07:37 2000
+--------------------------
+Patching file zforce.in using Plan A...
+Reversed (or previously applied) patch detected!  Skipping patch.
+Hunk #1 ignored at 58.
+1 out of 1 hunk ignored -- saving rejects to file zforce.in.rej
+done

@@ -1,0 +1,29 @@
+Hmm...  Looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|--- gzip.c
+|+++ gzip.c
+--------------------------
+Patching file gzip.c using Plan A...
+Hunk #1 succeeded at 1654 (offset 15 lines).
+Not setting time of file gzip.c (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|--- lib/utimens.c
+|+++ lib/utimens.c
+--------------------------
+Patching file lib/utimens.c using Plan A...
+Hunk #1 succeeded at 81 (offset 6 lines).
+Hunk #2 succeeded at 191 (offset 6 lines).
+Not setting time of file lib/utimens.c (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|--- lib/utimens.h
+|+++ lib/utimens.h
+--------------------------
+Patching file lib/utimens.h using Plan A...
+Hunk #1 succeeded at 1.
+Not setting time of file lib/utimens.h (time mismatch)
+done
