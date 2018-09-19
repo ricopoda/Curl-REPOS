@@ -1,0 +1,8 @@
+     ../../sed-4.2.1-src/sed/compile.c \
+     ../../sed-4.2.1-src/sed/execute.c \
+     ../../sed-4.2.1-src/sed/regexp.c \
+     ../../sed-4.2.1-src/sed/sed.c \
+     ../../sed-4.2.1-src/sed/utils.c \
+     ../../sed-4.2.1-src/lib/regcomp.c \
+     ../../sed-4.2.1-src/lib/regexec.c \
+     ../../sed-4.2.1-src/lib/regex_internal.c

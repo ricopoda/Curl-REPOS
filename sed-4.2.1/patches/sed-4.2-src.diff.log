@@ -1,0 +1,220 @@
+Hmm...  Looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/Makefile.in sed-4.2-src/Makefile.in
+|--- sed-4.2-orig/Makefile.in	2009-04-30 11:01:51.000000000 +0200
+|+++ sed-4.2-src/Makefile.in	2009-05-04 13:48:34.915040200 +0200
+--------------------------
+Patching file Makefile.in using Plan A...
+Reversed (or previously applied) patch detected!  Skipping patch.
+Hunk #1 ignored at 569.
+1 out of 1 hunk ignored -- saving rejects to file Makefile.in.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/basicdefs.h sed-4.2-src/basicdefs.h
+|--- sed-4.2-orig/basicdefs.h	2009-04-27 12:14:51.000000000 +0200
+|+++ sed-4.2-src/basicdefs.h	2009-05-04 13:43:10.071290200 +0200
+--------------------------
+Patching file basicdefs.h using Plan A...
+Hunk #1 succeeded at 150.
+Hunk #2 succeeded at 170.
+Not setting time of file basicdefs.h (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/config_h.in sed-4.2-src/config_h.in
+|--- sed-4.2-orig/config_h.in	2009-04-30 10:56:55.000000000 +0200
+|+++ sed-4.2-src/config_h.in	2009-05-04 13:51:15.180665000 +0200
+--------------------------
+Patching file config_h.in using Plan A...
+Reversed (or previously applied) patch detected!  Skipping patch.
+Hunk #1 ignored at 645.
+1 out of 1 hunk ignored -- saving rejects to file config_h.in.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/doc/Makefile.in sed-4.2-src/doc/Makefile.in
+|--- sed-4.2-orig/doc/Makefile.in	2009-04-30 10:52:10.000000000 +0200
+|+++ sed-4.2-src/doc/Makefile.in	2009-05-04 13:48:33.243165200 +0200
+--------------------------
+Patching file doc/Makefile.in using Plan A...
+Reversed (or previously applied) patch detected!  Skipping patch.
+Hunk #1 ignored at 562.
+1 out of 1 hunk ignored -- saving rejects to file doc/Makefile.in.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/doc/sed.1 sed-4.2-src/doc/sed.1
+|--- sed-4.2-orig/doc/sed.1	2009-04-30 11:14:01.000000000 +0200
+|+++ sed-4.2-src/doc/sed.1	2009-06-04 23:08:17.281250000 +0200
+--------------------------
+Patching file doc/sed.1 using Plan A...
+Hunk #1 FAILED at 1.
+Hunk #2 succeeded at 19.
+Hunk #3 succeeded at 34.
+Hunk #4 succeeded at 75.
+Hunk #5 succeeded at 381.
+Not setting time of file doc/sed.1 (time mismatch)
+1 out of 5 hunks FAILED -- saving rejects to file doc/sed.1.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/lib/Makefile.in sed-4.2-src/lib/Makefile.in
+|--- sed-4.2-orig/lib/Makefile.in	2009-04-30 10:52:10.000000000 +0200
+|+++ sed-4.2-src/lib/Makefile.in	2009-05-04 13:48:33.790040200 +0200
+--------------------------
+Patching file lib/Makefile.in using Plan A...
+Reversed (or previously applied) patch detected!  Skipping patch.
+Hunk #1 ignored at 579.
+1 out of 1 hunk ignored -- saving rejects to file lib/Makefile.in.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/lib/regex_internal.h sed-4.2-src/lib/regex_internal.h
+|--- sed-4.2-orig/lib/regex_internal.h	2009-03-31 08:52:25.000000000 +0200
+|+++ sed-4.2-src/lib/regex_internal.h	2009-05-04 13:43:10.165040200 +0200
+--------------------------
+Patching file lib/regex_internal.h using Plan A...
+Hunk #1 succeeded at 458.
+Not setting time of file lib/regex_internal.h (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/sed/Makefile.in sed-4.2-src/sed/Makefile.in
+|--- sed-4.2-orig/sed/Makefile.in	2009-04-30 10:52:11.000000000 +0200
+|+++ sed-4.2-src/sed/Makefile.in	2009-05-04 14:30:47.430665200 +0200
+--------------------------
+Patching file sed/Makefile.in using Plan A...
+Hunk #1 succeeded at 88 (offset 7 lines).
+Hunk #2 succeeded at 494 (offset 27 lines).
+Hunk #3 FAILED at 557.
+Hunk #4 succeeded at 571 (offset 28 lines).
+Hunk #5 succeeded at 642 (offset 12 lines).
+Not setting time of file sed/Makefile.in (time mismatch)
+1 out of 5 hunks FAILED -- saving rejects to file sed/Makefile.in.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/sed/execute.c sed-4.2-src/sed/execute.c
+|--- sed-4.2-orig/sed/execute.c	2009-04-30 10:43:03.000000000 +0200
+|+++ sed-4.2-src/sed/execute.c	2009-05-31 17:57:51.765625000 +0200
+--------------------------
+Patching file sed/execute.c using Plan A...
+Hunk #1 succeeded at 697 (offset 8 lines).
+Hunk #2 FAILED at 774.
+Hunk #3 succeeded at 1296 (offset 47 lines).
+Hunk #4 succeeded at 1458 (offset 47 lines).
+Not setting time of file sed/execute.c (time mismatch)
+1 out of 4 hunks FAILED -- saving rejects to file sed/execute.c.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/sed/sed.c sed-4.2-src/sed/sed.c
+|--- sed-4.2-orig/sed/sed.c	2009-04-27 12:09:43.000000000 +0200
+|+++ sed-4.2-src/sed/sed.c	2009-06-04 23:07:49.250000000 +0200
+--------------------------
+Patching file sed/sed.c using Plan A...
+Hunk #1 succeeded at 44 (offset -2 lines).
+Hunk #2 succeeded at 80 (offset -2 lines).
+Hunk #3 succeeded at 145 (offset -2 lines).
+Hunk #4 succeeded at 165 (offset -2 lines).
+Hunk #5 succeeded at 184 (offset -2 lines).
+Hunk #6 succeeded at 198 (offset -2 lines).
+Hunk #7 succeeded at 210 (offset -2 lines).
+Hunk #8 succeeded at 252 (offset -2 lines).
+Hunk #9 succeeded at 276 (offset -2 lines).
+Hunk #10 succeeded at 294 (offset -2 lines).
+Hunk #11 succeeded at 353 (offset -2 lines).
+Hunk #12 succeeded at 362 (offset -2 lines).
+Not setting time of file sed/sed.c (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/sed/sed.h sed-4.2-src/sed/sed.h
+|--- sed-4.2-orig/sed/sed.h	2009-04-27 12:14:51.000000000 +0200
+|+++ sed-4.2-src/sed/sed.h	2009-05-04 15:56:41.024415200 +0200
+--------------------------
+Patching file sed/sed.h using Plan A...
+Hunk #1 succeeded at 232.
+Not setting time of file sed/sed.h (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/sed/utils.c sed-4.2-src/sed/utils.c
+|--- sed-4.2-orig/sed/utils.c	2009-04-30 10:43:47.000000000 +0200
+|+++ sed-4.2-src/sed/utils.c	2009-06-04 23:23:38.812500000 +0200
+--------------------------
+Patching file sed/utils.c using Plan A...
+Hunk #1 succeeded at 205 (offset 1 line).
+Hunk #2 succeeded at 422 (offset 5 lines).
+Hunk #3 succeeded at 540 (offset 5 lines).
+Not setting time of file sed/utils.c (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/sed/utils.h sed-4.2-src/sed/utils.h
+|--- sed-4.2-orig/sed/utils.h	2009-04-30 10:43:59.000000000 +0200
+|+++ sed-4.2-src/sed/utils.h	2009-05-31 17:39:47.921875000 +0200
+--------------------------
+Patching file sed/utils.h using Plan A...
+Hunk #1 succeeded at 32.
+Not setting time of file sed/utils.h (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/testsuite/Makefile.in sed-4.2-src/testsuite/Makefile.in
+|--- sed-4.2-orig/testsuite/Makefile.in	2009-04-30 10:52:11.000000000 +0200
+|+++ sed-4.2-src/testsuite/Makefile.in	2009-05-04 13:48:34.571290200 +0200
+--------------------------
+Patching file testsuite/Makefile.in using Plan A...
+Reversed (or previously applied) patch detected!  Skipping patch.
+Hunk #1 ignored at 641.
+1 out of 1 hunk ignored -- saving rejects to file testsuite/Makefile.in.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/testsuite/bsd.sh sed-4.2-src/testsuite/bsd.sh
+|--- sed-4.2-orig/testsuite/bsd.sh	2008-04-24 16:24:11.000000000 +0200
+|+++ sed-4.2-src/testsuite/bsd.sh	2009-05-04 13:43:10.305665200 +0200
+--------------------------
+Patching file testsuite/bsd.sh using Plan A...
+Hunk #1 succeeded at 147.
+Hunk #2 succeeded at 345.
+Hunk #3 succeeded at 354.
+Hunk #4 succeeded at 365.
+Not setting time of file testsuite/bsd.sh (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/testsuite/bug-regex15.c sed-4.2-src/testsuite/bug-regex15.c
+|--- sed-4.2-orig/testsuite/bug-regex15.c	2009-04-27 12:14:51.000000000 +0200
+|+++ sed-4.2-src/testsuite/bug-regex15.c	2009-05-04 13:43:10.321290200 +0200
+--------------------------
+Patching file testsuite/bug-regex15.c using Plan A...
+Hunk #1 succeeded at 6.
+Not setting time of file testsuite/bug-regex15.c (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/testsuite/eval.good sed-4.2-src/testsuite/eval.good
+|--- sed-4.2-orig/testsuite/eval.good	2008-01-09 17:20:38.000000000 +0100
+|+++ sed-4.2-src/testsuite/eval.good	2009-05-04 13:43:10.321290200 +0200
+--------------------------
+Patching file testsuite/eval.good using Plan A...
+Hunk #1 succeeded at 31.
+Not setting time of file testsuite/eval.good (time mismatch)
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|diff -ipuwr --binary --strip-trailing-cr -x '*.bak' -x '*.orig' -x '*.rej' -x '*.new' -x '*~' -x debian -x '*.po' -x '*.pot' sed-4.2-orig/testsuite/eval.sed sed-4.2-src/testsuite/eval.sed
+|--- sed-4.2-orig/testsuite/eval.sed	2008-01-09 17:20:38.000000000 +0100
+|+++ sed-4.2-src/testsuite/eval.sed	2009-05-04 13:43:10.336915200 +0200
+--------------------------
+Patching file testsuite/eval.sed using Plan A...
+Hunk #1 succeeded at 2.
+Hunk #2 succeeded at 10.
+Hunk #3 succeeded at 19.
+Hunk #4 succeeded at 31.
+Not setting time of file testsuite/eval.sed (time mismatch)
+done

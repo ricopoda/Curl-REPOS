@@ -1,0 +1,477 @@
+make.exe  all-recursive
+make[1]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1' wordt binnengegaan
+Making all in lib
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/lib' wordt binnengegaan
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+	  cat ../../sed-4.2.1-src/lib/alloca.in.h; \
+	} > alloca.h-t
+mv -f alloca.h-t alloca.h
+rm -f configmake.h-t
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+	  echo '#define PREFIX "c:/progra~1/sed"'; \
+	  echo '#define EXEC_PREFIX "c:/progra~1/sed"'; \
+	  echo '#define BINDIR "c:/progra~1/sed/bin"'; \
+	  echo '#define SBINDIR "c:/progra~1/sed/sbin"'; \
+	  echo '#define LIBEXECDIR "c:/progra~1/sed/libexec"'; \
+	  echo '#define DATAROOTDIR "c:/progra~1/sed/share"'; \
+	  echo '#define DATADIR "c:/progra~1/sed/share"'; \
+	  echo '#define SYSCONFDIR "c:/progra~1/sed/etc"'; \
+	  echo '#define SHAREDSTATEDIR "c:/progra~1/sed/com"'; \
+	  echo '#define LOCALSTATEDIR "c:/progra~1/sed/var"'; \
+	  echo '#define INCLUDEDIR "c:/progra~1/sed/include"'; \
+	  echo '#define OLDINCLUDEDIR "/usr/include"'; \
+	  echo '#define DOCDIR "c:/progra~1/sed/doc"'; \
+	  echo '#define INFODIR "c:/progra~1/sed/info"'; \
+	  echo '#define HTMLDIR "c:/progra~1/sed/doc"'; \
+	  echo '#define DVIDIR "c:/progra~1/sed/doc"'; \
+	  echo '#define PDFDIR "c:/progra~1/sed/doc"'; \
+	  echo '#define PSDIR "c:/progra~1/sed/doc"'; \
+	  echo '#define LIBDIR "c:/progra~1/sed/lib"'; \
+	  echo '#define LISPDIR ""'; \
+	  echo '#define LOCALEDIR "c:/progra~1/sed/share/locale"'; \
+	  echo '#define MANDIR "c:/progra~1/sed/man"'; \
+	  echo '#define MANEXT ""'; \
+	  echo '#define PKGDATADIR "c:/progra~1/sed/share/sed"'; \
+	  echo '#define PKGINCLUDEDIR "c:/progra~1/sed/include/sed"'; \
+	  echo '#define PKGLIBDIR "c:/progra~1/sed/lib/sed"'; \
+	  echo '#define PKGLIBEXECDIR ""'; \
+	} | sed '/""/d' > configmake.h-t
+if test -f configmake.h && cmp configmake.h-t configmake.h > /dev/null; then \
+	  rm -f configmake.h-t; \
+	else \
+	  rm -f configmake.h; mv configmake.h-t configmake.h; \
+	fi
+rm -f errno.h-t errno.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+	  sed -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+	      -e 's|@''NEXT_ERRNO_H''@|<errno.h>|g' \
+	      -e 's|@''EMULTIHOP_HIDDEN''@|0|g' \
+	      -e 's|@''EMULTIHOP_VALUE''@||g' \
+	      -e 's|@''ENOLINK_HIDDEN''@|0|g' \
+	      -e 's|@''ENOLINK_VALUE''@||g' \
+	      -e 's|@''EOVERFLOW_HIDDEN''@|0|g' \
+	      -e 's|@''EOVERFLOW_VALUE''@||g' \
+	      < ../../sed-4.2.1-src/lib/errno.in.h; \
+	} > errno.h-t
+mv errno.h-t errno.h
+rm -f selinux/selinux.h-t selinux/selinux.h
+/usr/bin/mkdir -p selinux
+cp ../../sed-4.2.1-src/lib/se-selinux.in.h selinux/selinux.h-t
+chmod a-x selinux/selinux.h-t
+mv selinux/selinux.h-t selinux/selinux.h
+rm -f selinux/context.h-t selinux/context.h
+/usr/bin/mkdir -p selinux
+cp ../../sed-4.2.1-src/lib/se-context.in.h selinux/context.h-t
+chmod a-x selinux/context.h-t
+mv selinux/context.h-t selinux/context.h
+rm -f stdio.h-t stdio.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+	  sed -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+	      -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+	      -e 's|@''GNULIB_FPRINTF''@|1|g' \
+	      -e 's|@''GNULIB_FPRINTF_POSIX''@|0|g' \
+	      -e 's|@''GNULIB_PRINTF''@|1|g' \
+	      -e 's|@''GNULIB_PRINTF_POSIX''@|0|g' \
+	      -e 's|@''GNULIB_SNPRINTF''@|0|g' \
+	      -e 's|@''GNULIB_SPRINTF_POSIX''@|0|g' \
+	      -e 's|@''GNULIB_VFPRINTF''@|1|g' \
+	      -e 's|@''GNULIB_VFPRINTF_POSIX''@|0|g' \
+	      -e 's|@''GNULIB_VPRINTF''@|1|g' \
+	      -e 's|@''GNULIB_VPRINTF_POSIX''@|0|g' \
+	      -e 's|@''GNULIB_VSNPRINTF''@|0|g' \
+	      -e 's|@''GNULIB_VSPRINTF_POSIX''@|0|g' \
+	      -e 's|@''GNULIB_DPRINTF''@|0|g' \
+	      -e 's|@''GNULIB_VDPRINTF''@|0|g' \
+	      -e 's|@''GNULIB_VASPRINTF''@|0|g' \
+	      -e 's|@''GNULIB_OBSTACK_PRINTF''@|0|g' \
+	      -e 's|@''GNULIB_OBSTACK_PRINTF_POSIX''@|0|g' \
+	      -e 's|@''GNULIB_FOPEN''@|0|g' \
+	      -e 's|@''GNULIB_FREOPEN''@|0|g' \
+	      -e 's|@''GNULIB_FSEEK''@|0|g' \
+	      -e 's|@''GNULIB_FSEEKO''@|0|g' \
+	      -e 's|@''GNULIB_FTELL''@|0|g' \
+	      -e 's|@''GNULIB_FTELLO''@|0|g' \
+	      -e 's|@''GNULIB_FFLUSH''@|0|g' \
+	      -e 's|@''GNULIB_FPURGE''@|0|g' \
+	      -e 's|@''GNULIB_FCLOSE''@|0|g' \
+	      -e 's|@''GNULIB_FPUTC''@|1|g' \
+	      -e 's|@''GNULIB_PUTC''@|1|g' \
+	      -e 's|@''GNULIB_PUTCHAR''@|1|g' \
+	      -e 's|@''GNULIB_FPUTS''@|1|g' \
+	      -e 's|@''GNULIB_PUTS''@|1|g' \
+	      -e 's|@''GNULIB_FWRITE''@|1|g' \
+	      -e 's|@''GNULIB_GETDELIM''@|1|g' \
+	      -e 's|@''GNULIB_GETLINE''@|1|g' \
+	      -e 's|@''GNULIB_PERROR''@|0|g' \
+	      -e 's|@''GNULIB_STDIO_H_SIGPIPE''@|0|g' \
+	      -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+	      -e 's|@''REPLACE_FPRINTF''@|0|g' \
+	      -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+	      -e 's|@''REPLACE_PRINTF''@|0|g' \
+	      -e 's|@''REPLACE_VPRINTF''@|0|g' \
+	      -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+	      -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+	      -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+	      -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+	      -e 's|@''REPLACE_SPRINTF''@|0|g' \
+	      -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+	      -e 's|@''HAVE_DPRINTF''@|1|g' \
+	      -e 's|@''REPLACE_DPRINTF''@|0|g' \
+	      -e 's|@''HAVE_VDPRINTF''@|1|g' \
+	      -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+	      -e 's|@''HAVE_VASPRINTF''@|1|g' \
+	      -e 's|@''REPLACE_VASPRINTF''@|0|g' \
+	      -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+	      -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+	      -e 's|@''REPLACE_FOPEN''@|0|g' \
+	      -e 's|@''REPLACE_FREOPEN''@|0|g' \
+	      -e 's|@''REPLACE_FSEEKO''@|0|g' \
+	      -e 's|@''REPLACE_FSEEK''@|0|g' \
+	      -e 's|@''REPLACE_FTELLO''@|0|g' \
+	      -e 's|@''REPLACE_FTELL''@|0|g' \
+	      -e 's|@''REPLACE_FFLUSH''@|0|g' \
+	      -e 's|@''REPLACE_FPURGE''@|0|g' \
+	      -e 's|@''HAVE_DECL_FPURGE''@|1|g' \
+	      -e 's|@''REPLACE_FCLOSE''@|0|g' \
+	      -e 's|@''HAVE_DECL_GETDELIM''@|0|g' \
+	      -e 's|@''HAVE_DECL_GETLINE''@|0|g' \
+	      -e 's|@''REPLACE_GETLINE''@|1|g' \
+	      -e 's|@''REPLACE_PERROR''@|0|g' \
+	      -e '/definition of GL_LINK_WARNING/r ../../sed-4.2.1-src/build-aux/link-warning.h' \
+	      < ../../sed-4.2.1-src/lib/stdio.in.h; \
+	} > stdio.h-t
+mv stdio.h-t stdio.h
+rm -f stdlib.h-t stdlib.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+	  sed -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+	      -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+	      -e 's|@''HAVE_RANDOM_H''@|0|g' \
+	      -e 's|@''GNULIB_MALLOC_POSIX''@|1|g' \
+	      -e 's|@''GNULIB_REALLOC_POSIX''@|1|g' \
+	      -e 's|@''GNULIB_CALLOC_POSIX''@|0|g' \
+	      -e 's|@''GNULIB_ATOLL''@|0|g' \
+	      -e 's|@''GNULIB_GETLOADAVG''@|0|g' \
+	      -e 's|@''GNULIB_GETSUBOPT''@|0|g' \
+	      -e 's|@''GNULIB_MKDTEMP''@|0|g' \
+	      -e 's|@''GNULIB_MKSTEMP''@|1|g' \
+	      -e 's|@''GNULIB_PUTENV''@|0|g' \
+	      -e 's|@''GNULIB_RANDOM_R''@|0|g' \
+	      -e 's|@''GNULIB_RPMATCH''@|0|g' \
+	      -e 's|@''GNULIB_SETENV''@|0|g' \
+	      -e 's|@''GNULIB_STRTOD''@|0|g' \
+	      -e 's|@''GNULIB_STRTOLL''@|0|g' \
+	      -e 's|@''GNULIB_STRTOULL''@|0|g' \
+	      -e 's|@''GNULIB_UNSETENV''@|0|g' \
+	      -e 's|@''HAVE_ATOLL''@|1|g' \
+	      -e 's|@''HAVE_CALLOC_POSIX''@|1|g' \
+	      -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+	      -e 's|@''HAVE_MALLOC_POSIX''@|0|g' \
+	      -e 's|@''HAVE_MKDTEMP''@|1|g' \
+	      -e 's|@''HAVE_REALLOC_POSIX''@|0|g' \
+	      -e 's|@''HAVE_RANDOM_R''@|1|g' \
+	      -e 's|@''HAVE_RPMATCH''@|1|g' \
+	      -e 's|@''HAVE_SETENV''@|1|g' \
+	      -e 's|@''HAVE_STRTOD''@|1|g' \
+	      -e 's|@''HAVE_STRTOLL''@|1|g' \
+	      -e 's|@''HAVE_STRTOULL''@|1|g' \
+	      -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|0|g' \
+	      -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+	      -e 's|@''HAVE_UNSETENV''@|1|g' \
+	      -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+	      -e 's|@''REPLACE_MKSTEMP''@|1|g' \
+	      -e 's|@''REPLACE_PUTENV''@|0|g' \
+	      -e 's|@''REPLACE_STRTOD''@|0|g' \
+	      -e 's|@''VOID_UNSETENV''@|0|g' \
+	      -e '/definition of GL_LINK_WARNING/r ../../sed-4.2.1-src/build-aux/link-warning.h' \
+	      < ../../sed-4.2.1-src/lib/stdlib.in.h; \
+	} > stdlib.h-t
+mv stdlib.h-t stdlib.h
+rm -f string.h-t string.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+	  sed -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+	      -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+	      -e 's|@''GNULIB_MBSLEN''@|0|g' \
+	      -e 's|@''GNULIB_MBSNLEN''@|0|g' \
+	      -e 's|@''GNULIB_MBSCHR''@|0|g' \
+	      -e 's|@''GNULIB_MBSRCHR''@|0|g' \
+	      -e 's|@''GNULIB_MBSSTR''@|0|g' \
+	      -e 's|@''GNULIB_MBSCASECMP''@|0|g' \
+	      -e 's|@''GNULIB_MBSNCASECMP''@|0|g' \
+	      -e 's|@''GNULIB_MBSPCASECMP''@|0|g' \
+	      -e 's|@''GNULIB_MBSCASESTR''@|0|g' \
+	      -e 's|@''GNULIB_MBSCSPN''@|0|g' \
+	      -e 's|@''GNULIB_MBSPBRK''@|0|g' \
+	      -e 's|@''GNULIB_MBSSPN''@|0|g' \
+	      -e 's|@''GNULIB_MBSSEP''@|0|g' \
+	      -e 's|@''GNULIB_MBSTOK_R''@|0|g' \
+	      -e 's|@''GNULIB_MEMCHR''@|1|g' \
+	      -e 's|@''GNULIB_MEMMEM''@|0|g' \
+	      -e 's|@''GNULIB_MEMPCPY''@|0|g' \
+	      -e 's|@''GNULIB_MEMRCHR''@|0|g' \
+	      -e 's|@''GNULIB_RAWMEMCHR''@|0|g' \
+	      -e 's|@''GNULIB_STPCPY''@|0|g' \
+	      -e 's|@''GNULIB_STPNCPY''@|0|g' \
+	      -e 's|@''GNULIB_STRCHRNUL''@|0|g' \
+	      -e 's|@''GNULIB_STRDUP''@|0|g' \
+	      -e 's|@''GNULIB_STRNDUP''@|1|g' \
+	      -e 's|@''GNULIB_STRNLEN''@|1|g' \
+	      -e 's|@''GNULIB_STRPBRK''@|0|g' \
+	      -e 's|@''GNULIB_STRSEP''@|0|g' \
+	      -e 's|@''GNULIB_STRSTR''@|0|g' \
+	      -e 's|@''GNULIB_STRCASESTR''@|0|g' \
+	      -e 's|@''GNULIB_STRTOK_R''@|0|g' \
+	      -e 's|@''GNULIB_STRERROR''@|1|g' \
+	      -e 's|@''GNULIB_STRSIGNAL''@|0|g' \
+	      -e 's|@''GNULIB_STRVERSCMP''@|1|g' \
+	      -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+	      -e 's|@''HAVE_MEMPCPY''@|1|g' \
+	      -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+	      -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+	      -e 's|@''HAVE_STPCPY''@|1|g' \
+	      -e 's|@''HAVE_STPNCPY''@|1|g' \
+	      -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+	      -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+	      -e 's|@''HAVE_STRNDUP''@|0|g' \
+	      -e 's|@''HAVE_DECL_STRNDUP''@|0|g' \
+	      -e 's|@''HAVE_DECL_STRNLEN''@|0|g' \
+	      -e 's|@''HAVE_STRPBRK''@|1|g' \
+	      -e 's|@''HAVE_STRSEP''@|1|g' \
+	      -e 's|@''HAVE_STRCASESTR''@|1|g' \
+	      -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+	      -e 's|@''HAVE_DECL_STRERROR''@|1|g' \
+	      -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+	      -e 's|@''HAVE_STRVERSCMP''@|0|g' \
+	      -e 's|@''REPLACE_MEMCHR''@|0|g' \
+	      -e 's|@''REPLACE_MEMMEM''@|0|g' \
+	      -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+	      -e 's|@''REPLACE_STRDUP''@|0|g' \
+	      -e 's|@''REPLACE_STRSTR''@|0|g' \
+	      -e 's|@''REPLACE_STRERROR''@|1|g' \
+	      -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+	      -e '/definition of GL_LINK_WARNING/r ../../sed-4.2.1-src/build-aux/link-warning.h' \
+	      < ../../sed-4.2.1-src/lib/string.in.h; \
+	} > string.h-t
+mv string.h-t string.h
+/usr/bin/mkdir -p sys
+rm -f sys/stat.h-t sys/stat.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+	  sed -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+	      -e 's|@''NEXT_SYS_STAT_H''@|<sys/stat.h>|g' \
+	      -e 's|@''GNULIB_LCHMOD''@|0|g' \
+	      -e 's|@''GNULIB_LSTAT''@|1|g' \
+	      -e 's|@''HAVE_LCHMOD''@|1|g' \
+	      -e 's|@''HAVE_LSTAT''@|0|g' \
+	      -e 's|@''REPLACE_LSTAT''@|0|g' \
+	      -e 's|@''REPLACE_MKDIR''@|0|g' \
+	      -e '/definition of GL_LINK_WARNING/r ../../sed-4.2.1-src/build-aux/link-warning.h' \
+	      < ../../sed-4.2.1-src/lib/sys_stat.in.h; \
+	} > sys/stat.h-t
+mv sys/stat.h-t sys/stat.h
+rm -f unistd.h-t unistd.h
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+	  sed -e 's|@''HAVE_UNISTD_H''@|1|g' \
+	      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+	      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+	      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+	      -e 's|@''GNULIB_CHOWN''@|0|g' \
+	      -e 's|@''GNULIB_CLOSE''@|0|g' \
+	      -e 's|@''GNULIB_DUP2''@|0|g' \
+	      -e 's|@''GNULIB_ENVIRON''@|0|g' \
+	      -e 's|@''GNULIB_EUIDACCESS''@|0|g' \
+	      -e 's|@''GNULIB_FCHDIR''@|0|g' \
+	      -e 's|@''GNULIB_FSYNC''@|0|g' \
+	      -e 's|@''GNULIB_FTRUNCATE''@|0|g' \
+	      -e 's|@''GNULIB_GETCWD''@|0|g' \
+	      -e 's|@''GNULIB_GETDOMAINNAME''@|0|g' \
+	      -e 's|@''GNULIB_GETDTABLESIZE''@|0|g' \
+	      -e 's|@''GNULIB_GETHOSTNAME''@|0|g' \
+	      -e 's|@''GNULIB_GETLOGIN_R''@|0|g' \
+	      -e 's|@''GNULIB_GETPAGESIZE''@|1|g' \
+	      -e 's|@''GNULIB_GETUSERSHELL''@|0|g' \
+	      -e 's|@''GNULIB_LCHOWN''@|0|g' \
+	      -e 's|@''GNULIB_LINK''@|0|g' \
+	      -e 's|@''GNULIB_LSEEK''@|0|g' \
+	      -e 's|@''GNULIB_READLINK''@|0|g' \
+	      -e 's|@''GNULIB_SLEEP''@|0|g' \
+	      -e 's|@''GNULIB_UNISTD_H_SIGPIPE''@|0|g' \
+	      -e 's|@''GNULIB_WRITE''@|0|g' \
+	      -e 's|@''HAVE_DUP2''@|1|g' \
+	      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+	      -e 's|@''HAVE_FSYNC''@|1|g' \
+	      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+	      -e 's|@''HAVE_GETDOMAINNAME''@|1|g' \
+	      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+	      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+	      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+	      -e 's|@''HAVE_GETUSERSHELL''@|1|g' \
+	      -e 's|@''HAVE_LINK''@|1|g' \
+	      -e 's|@''HAVE_READLINK''@|1|g' \
+	      -e 's|@''HAVE_SLEEP''@|1|g' \
+	      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+	      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+	      -e 's|@''HAVE_OS_H''@|0|g' \
+	      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+	      -e 's|@''REPLACE_CHOWN''@|0|g' \
+	      -e 's|@''REPLACE_CLOSE''@|0|g' \
+	      -e 's|@''REPLACE_FCHDIR''@|0|g' \
+	      -e 's|@''REPLACE_GETCWD''@|0|g' \
+	      -e 's|@''REPLACE_GETPAGESIZE''@|1|g' \
+	      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+	      -e 's|@''REPLACE_LSEEK''@|0|g' \
+	      -e 's|@''REPLACE_WRITE''@|0|g' \
+	      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+	      -e '/definition of GL_LINK_WARNING/r ../../sed-4.2.1-src/build-aux/link-warning.h' \
+	      < ../../sed-4.2.1-src/lib/unistd.in.h; \
+	} > unistd.h-t
+mv unistd.h-t unistd.h
+make.exe  all-recursive
+make[3]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/lib' wordt binnengegaan
+make[4]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/lib' wordt binnengegaan
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT set-mode-acl.o -MD -MP -MF .deps/set-mode-acl.Tpo -c -o set-mode-acl.o ../../sed-4.2.1-src/lib/set-mode-acl.c
+mv -f .deps/set-mode-acl.Tpo .deps/set-mode-acl.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT copy-acl.o -MD -MP -MF .deps/copy-acl.Tpo -c -o copy-acl.o ../../sed-4.2.1-src/lib/copy-acl.c
+mv -f .deps/copy-acl.Tpo .deps/copy-acl.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT file-has-acl.o -MD -MP -MF .deps/file-has-acl.Tpo -c -o file-has-acl.o ../../sed-4.2.1-src/lib/file-has-acl.c
+mv -f .deps/file-has-acl.Tpo .deps/file-has-acl.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT c-ctype.o -MD -MP -MF .deps/c-ctype.Tpo -c -o c-ctype.o ../../sed-4.2.1-src/lib/c-ctype.c
+mv -f .deps/c-ctype.Tpo .deps/c-ctype.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT localcharset.o -MD -MP -MF .deps/localcharset.Tpo -c -o localcharset.o ../../sed-4.2.1-src/lib/localcharset.c
+mv -f .deps/localcharset.Tpo .deps/localcharset.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT xalloc-die.o -MD -MP -MF .deps/xalloc-die.Tpo -c -o xalloc-die.o ../../sed-4.2.1-src/lib/xalloc-die.c
+mv -f .deps/xalloc-die.Tpo .deps/xalloc-die.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT xstrndup.o -MD -MP -MF .deps/xstrndup.Tpo -c -o xstrndup.o ../../sed-4.2.1-src/lib/xstrndup.c
+mv -f .deps/xstrndup.Tpo .deps/xstrndup.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT basename.o -MD -MP -MF .deps/basename.Tpo -c -o basename.o ../../sed-4.2.1-src/lib/basename.c
+mv -f .deps/basename.Tpo .deps/basename.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT dirname.o -MD -MP -MF .deps/dirname.Tpo -c -o dirname.o ../../sed-4.2.1-src/lib/dirname.c
+mv -f .deps/dirname.Tpo .deps/dirname.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT error.o -MD -MP -MF .deps/error.Tpo -c -o error.o ../../sed-4.2.1-src/lib/error.c
+mv -f .deps/error.Tpo .deps/error.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT exitfail.o -MD -MP -MF .deps/exitfail.Tpo -c -o exitfail.o ../../sed-4.2.1-src/lib/exitfail.c
+mv -f .deps/exitfail.Tpo .deps/exitfail.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT getdelim.o -MD -MP -MF .deps/getdelim.Tpo -c -o getdelim.o ../../sed-4.2.1-src/lib/getdelim.c
+../../sed-4.2.1-src/lib/getdelim.c: In function `getdelim':
+../../sed-4.2.1-src/lib/getdelim.c:59: warning: 'result' might be used uninitialized in this function
+mv -f .deps/getdelim.Tpo .deps/getdelim.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT getline.o -MD -MP -MF .deps/getline.Tpo -c -o getline.o ../../sed-4.2.1-src/lib/getline.c
+mv -f .deps/getline.Tpo .deps/getline.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT getpagesize.o -MD -MP -MF .deps/getpagesize.Tpo -c -o getpagesize.o ../../sed-4.2.1-src/lib/getpagesize.c
+mv -f .deps/getpagesize.Tpo .deps/getpagesize.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT malloc.o -MD -MP -MF .deps/malloc.Tpo -c -o malloc.o ../../sed-4.2.1-src/lib/malloc.c
+mv -f .deps/malloc.Tpo .deps/malloc.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT mkstemp.o -MD -MP -MF .deps/mkstemp.Tpo -c -o mkstemp.o ../../sed-4.2.1-src/lib/mkstemp.c
+mv -f .deps/mkstemp.Tpo .deps/mkstemp.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT obstack.o -MD -MP -MF .deps/obstack.Tpo -c -o obstack.o ../../sed-4.2.1-src/lib/obstack.c
+mv -f .deps/obstack.Tpo .deps/obstack.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT quote.o -MD -MP -MF .deps/quote.Tpo -c -o quote.o ../../sed-4.2.1-src/lib/quote.c
+mv -f .deps/quote.Tpo .deps/quote.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT quotearg.o -MD -MP -MF .deps/quotearg.Tpo -c -o quotearg.o ../../sed-4.2.1-src/lib/quotearg.c
+mv -f .deps/quotearg.Tpo .deps/quotearg.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT realloc.o -MD -MP -MF .deps/realloc.Tpo -c -o realloc.o ../../sed-4.2.1-src/lib/realloc.c
+mv -f .deps/realloc.Tpo .deps/realloc.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT rename.o -MD -MP -MF .deps/rename.Tpo -c -o rename.o ../../sed-4.2.1-src/lib/rename.c
+mv -f .deps/rename.Tpo .deps/rename.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT strerror.o -MD -MP -MF .deps/strerror.Tpo -c -o strerror.o ../../sed-4.2.1-src/lib/strerror.c
+mv -f .deps/strerror.Tpo .deps/strerror.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT stripslash.o -MD -MP -MF .deps/stripslash.Tpo -c -o stripslash.o ../../sed-4.2.1-src/lib/stripslash.c
+mv -f .deps/stripslash.Tpo .deps/stripslash.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT strndup.o -MD -MP -MF .deps/strndup.Tpo -c -o strndup.o ../../sed-4.2.1-src/lib/strndup.c
+mv -f .deps/strndup.Tpo .deps/strndup.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT strnlen.o -MD -MP -MF .deps/strnlen.Tpo -c -o strnlen.o ../../sed-4.2.1-src/lib/strnlen.c
+mv -f .deps/strnlen.Tpo .deps/strnlen.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT strverscmp.o -MD -MP -MF .deps/strverscmp.Tpo -c -o strverscmp.o ../../sed-4.2.1-src/lib/strverscmp.c
+mv -f .deps/strverscmp.Tpo .deps/strverscmp.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT tempname.o -MD -MP -MF .deps/tempname.Tpo -c -o tempname.o ../../sed-4.2.1-src/lib/tempname.c
+mv -f .deps/tempname.Tpo .deps/tempname.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/lib -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT xmalloc.o -MD -MP -MF .deps/xmalloc.Tpo -c -o xmalloc.o ../../sed-4.2.1-src/lib/xmalloc.c
+mv -f .deps/xmalloc.Tpo .deps/xmalloc.Po
+rm -f libsed.a
+ar cru libsed.a set-mode-acl.o copy-acl.o file-has-acl.o c-ctype.o localcharset.o xalloc-die.o xstrndup.o basename.o dirname.o error.o exitfail.o getdelim.o getline.o getpagesize.o malloc.o mkstemp.o obstack.o quote.o quotearg.o realloc.o rename.o strerror.o stripslash.o strndup.o strnlen.o strverscmp.o tempname.o xmalloc.o 
+ranlib libsed.a
+rm -f t-charset.alias charset.alias
+/bin/sh ../../sed-4.2.1-src/lib/config.charset 'i386-pc-mingw32' > t-charset.alias
+mv t-charset.alias charset.alias
+rm -f t-ref-add.sed ref-add.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/sed/g' ../../sed-4.2.1-src/lib/ref-add.sin > t-ref-add.sed
+mv t-ref-add.sed ref-add.sed
+rm -f t-ref-del.sed ref-del.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/sed/g' ../../sed-4.2.1-src/lib/ref-del.sin > t-ref-del.sed
+mv t-ref-del.sed ref-del.sed
+make[4]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/lib' wordt verlaten
+make[3]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/lib' wordt verlaten
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/lib' wordt verlaten
+Making all in po
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/po' wordt binnengegaan
+make[2]: Er is niets te doen voor 'all'.
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/po' wordt verlaten
+Making all in sed
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/sed' wordt binnengegaan
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/sed -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -DLOCALEDIR=\"c:/progra~1/sed/share/locale\" -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT sed.o -MD -MP -MF .deps/sed.Tpo -c -o sed.o ../../sed-4.2.1-src/sed/sed.c
+In file included from ../../sed-4.2.1-src/sed/sed.h:23,
+                 from ../../sed-4.2.1-src/sed/sed.c:20:
+../../sed-4.2.1-src/basicdefs.h:111: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/sed.c:99: warning: function declaration isn't a prototype
+mv -f .deps/sed.Tpo .deps/sed.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/sed -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -DLOCALEDIR=\"c:/progra~1/sed/share/locale\" -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT compile.o -MD -MP -MF .deps/compile.Tpo -c -o compile.o ../../sed-4.2.1-src/sed/compile.c
+In file included from ../../sed-4.2.1-src/sed/sed.h:23,
+                 from ../../sed-4.2.1-src/sed/compile.c:21:
+../../sed-4.2.1-src/basicdefs.h:111: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/compile.c:194: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/compile.c: In function `match_slash':
+../../sed-4.2.1-src/sed/compile.c:458: warning: 'delim' might be used uninitialized in this function
+mv -f .deps/compile.Tpo .deps/compile.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/sed -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -DLOCALEDIR=\"c:/progra~1/sed/share/locale\" -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT execute.o -MD -MP -MF .deps/execute.Tpo -c -o execute.o ../../sed-4.2.1-src/sed/execute.c
+In file included from ../../sed-4.2.1-src/sed/sed.h:23,
+                 from ../../sed-4.2.1-src/sed/execute.c:23:
+../../sed-4.2.1-src/basicdefs.h:111: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/execute.c: In function `open_next_file':
+../../sed-4.2.1-src/sed/execute.c:742: warning: passing arg 2 of `fstat' from incompatible pointer type
+../../sed-4.2.1-src/sed/execute.c: In function `closedown':
+../../sed-4.2.1-src/sed/execute.c:831: warning: passing arg 1 of `free' discards qualifiers from pointer target type
+mv -f .deps/execute.Tpo .deps/execute.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/sed -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -DLOCALEDIR=\"c:/progra~1/sed/share/locale\" -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT regexp.o -MD -MP -MF .deps/regexp.Tpo -c -o regexp.o ../../sed-4.2.1-src/sed/regexp.c
+In file included from ../../sed-4.2.1-src/sed/sed.h:23,
+                 from ../../sed-4.2.1-src/sed/regexp.c:19:
+../../sed-4.2.1-src/basicdefs.h:111: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/regexp.c:48: warning: function declaration isn't a prototype
+mv -f .deps/regexp.Tpo .deps/regexp.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/sed -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -DLOCALEDIR=\"c:/progra~1/sed/share/locale\" -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT fmt.o -MD -MP -MF .deps/fmt.Tpo -c -o fmt.o ../../sed-4.2.1-src/sed/fmt.c
+In file included from ../../sed-4.2.1-src/sed/sed.h:23,
+                 from ../../sed-4.2.1-src/sed/fmt.c:20:
+../../sed-4.2.1-src/basicdefs.h:111: warning: function declaration isn't a prototype
+mv -f .deps/fmt.Tpo .deps/fmt.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/sed -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -DLOCALEDIR=\"c:/progra~1/sed/share/locale\" -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT mbcs.o -MD -MP -MF .deps/mbcs.Tpo -c -o mbcs.o ../../sed-4.2.1-src/sed/mbcs.c
+In file included from ../../sed-4.2.1-src/sed/sed.h:23,
+                 from ../../sed-4.2.1-src/sed/mbcs.c:18:
+../../sed-4.2.1-src/basicdefs.h:111: warning: function declaration isn't a prototype
+mv -f .deps/mbcs.Tpo .deps/mbcs.Po
+gcc -DHAVE_CONFIG_H -I. -I../../sed-4.2.1-src/sed -I..  -I../../sed-4.2.1-src/lib -I../../sed-4.2.1-src -I../lib -DLOCALEDIR=\"c:/progra~1/sed/share/locale\" -D__USE_MINGW_ACCESS -D_LARGEFILE_SOURCE=1 -D_LARGEFILE64_SOURCE=1 -D_FILE_OFFSET_BITS=64 -DENABLE_RELOCATABLE -DINSTALLPREFIX=\"c:/progra~1/sed\" -DINSTALLDIR=\"c:/progra~1/sed/bin\" -DEXEEXT=\".exe\" -DNO_XMALLOC       -ID:/Progra~1/GnuWin32/include       -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes   -MT utils.o -MD -MP -MF .deps/utils.Tpo -c -o utils.o ../../sed-4.2.1-src/sed/utils.c
+In file included from ../../sed-4.2.1-src/sed/utils.h:21,
+                 from ../../sed-4.2.1-src/sed/utils.c:43:
+../../sed-4.2.1-src/basicdefs.h:111: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/utils.c:126: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/utils.c:428: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/utils.c:437: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/utils.c:453: warning: function declaration isn't a prototype
+../../sed-4.2.1-src/sed/utils.c: In function `ck_getline':
+../../sed-4.2.1-src/sed/utils.c:276: warning: 'result' might be used uninitialized in this function
+mv -f .deps/utils.Tpo .deps/utils.Po
+windres --include-dir ../resource -i ../resource/sed-res.rc -o sed-res.o
+gcc  -Wall -Wpointer-arith -O3 -fms-extensions -mms-bitfields -fno-exceptions -fomit-frame-pointer -march=i386 -ffast-math  -Wstrict-prototypes    -Wl,-s -Wl,--force-exe-suffix -Wl,--enable-auto-import -Wl,--enable-runtime-pseudo-reloc -Wl,--allow-multiple-definition -Wl,--enable-stdcall-fixup -LD:/Progra~1/GnuWin32/lib    -Wl,--major-image-version=4 -Wl,--minor-image-version=2 -o sed.exe sed.o compile.o execute.o regexp.o fmt.o mbcs.o utils.o sed-res.o ../lib/libsed.a D:/Progra~1/GnuWin32/lib/libintl.dll.a -LD:/Progra~1/GnuWin32/lib   -Wl,-s -lregex -LD:/Progra~1/GnuWin32/lib  -lintl -lwsock32 -lole32 -luuid -lmsvcp60  
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/sed' wordt verlaten
+Making all in doc
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/doc' wordt binnengegaan
+make[2]: Er is niets te doen voor 'all'.
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/doc' wordt verlaten
+Making all in testsuite
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/testsuite' wordt binnengegaan
+make[2]: Er is niets te doen voor 'all'.
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1/testsuite' wordt verlaten
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1' wordt binnengegaan
+make[2]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1' wordt verlaten
+make[1]: Map '/cygdrive/j/Textproc/sed/4.2.1/sed-4.2.1' wordt verlaten
